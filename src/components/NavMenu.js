@@ -18,6 +18,18 @@ const noBorder = {
 }
 
 class NavMenu extends React.Component {
+  state = {
+    open: false,
+    anchor: 'right'
+  };
+
+  handleDrawerOpen = () => {
+    this.setState({ open: true });
+  };
+
+  handleDrawerClose = () =>{
+    this.setState({ open: false });
+  };
 
   render() {
 
